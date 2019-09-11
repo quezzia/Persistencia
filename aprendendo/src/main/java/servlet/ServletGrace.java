@@ -77,7 +77,7 @@ public class ServletGrace extends HttpServlet {
         
         Usuario usuario = new Usuario();
         usuario.setNome(request.getParameter("nome"));
-        
+        usuario.setId(request.getParameter("id"));
         
         Session sessionRecheio;
         sessionRecheio = HibernateUtil.getSession();
